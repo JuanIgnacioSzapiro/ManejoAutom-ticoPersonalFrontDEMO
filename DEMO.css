@@ -1,0 +1,98 @@
+.contenedor{
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: grid;
+    gap: 0px;
+
+    grid-template-areas: 
+    "a"
+    "b"
+    "c";
+}
+
+.item1{
+    grid-area: a;
+    align-self: self-start;
+}
+
+.item2{
+    grid-area: b;
+}
+
+.item3{
+    grid-area: c;
+    align-self: self-end;
+}
+
+.barraSuperior{
+    background-color: rgb(255, 214, 214);
+
+    /* alineamiento horizontal */
+    text-align: center;
+
+    /* alineamiento vertical */
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+}
+
+#opcionesCitas{
+    display: none;
+}
+
+#opcionesListado{
+    display: none
+}
+
+.redireccionamiento{
+    font-size: 1.5rem;
+
+    line-height: 180%;
+}
+
+.sublistados{
+    background-color: rgb(250, 196, 196);
+}
+
+ul {
+    list-style: none;
+}
+
+@media (min-width:900px) {
+    .barraSuperior{
+        /* alineamiento vertical */
+        display: flex;
+        flex-direction:row;
+    }
+}
+
+.barraInferior{
+    background-color: rgb(88, 88, 88);
+
+    color: white;
+
+    display: grid;
+}
+
+.barraInferior > .aclaracion{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.barraInferior > .contactos{
+    background-color: rgb(70, 70, 70);
+}
+
+.barraInferior > .contactos > ul{
+    /* alineamiento horizontal */
+    text-align: center;
+
+    /* alineamiento vertical */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+}
