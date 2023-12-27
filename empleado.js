@@ -1,0 +1,18 @@
+var Empleado = {
+    id_empleado: Number,
+    nombre: String,
+    apellido: String, 
+    antiguedad: String,
+    experiencias: experiencia[0],
+    puntaje_promedio:Number,
+    porcentaje_asistencia_reciente: String,
+    porcentaje_asistencia_total: String,
+    numero_telefono_fijo: String[0],
+    numero_telefono_movil: String[0],
+    mail: String[0],
+    cuil: String,
+    dni: String,
+    genero: String,
+    herramientas_trabajo_asignadas: String[0],
+    vigente: Boolean,
+}
